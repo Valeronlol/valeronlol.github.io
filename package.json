@@ -8,7 +8,10 @@
     "build": "astro build"
   },
   "devDependencies": {
-    "astro": "^0.20.5",
-    "@astrojs/renderer-svelte": "^0.1.1"
+    "@astrojs/renderer-svelte": "^0.1.1",
+    "astro": "^0.20.5"
+  },
+  "dependencies": {
+    "lodash.get": "^4.4.2"
   }
 }

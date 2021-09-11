@@ -1,0 +1,23 @@
+---
+import Title from './Title.svelte'
+import LanguageToggle from './LanguageToggle.svelte'
+import Navigation from './Navigation.svelte'
+---
+
+<header class="header">
+    <div class="header-top">
+        <Title client:load />
+        <Navigation client:load />
+        <LanguageToggle client:load />
+    </div>
+    <div class="header-bottom">
+        
+    </div>
+</header>
+
+<style>
+    .header {
+        height: 200px;
+        background-color: #f9f0f0;
+    }
+</style>
