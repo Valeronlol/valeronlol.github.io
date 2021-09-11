@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('/fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'LatoRegular';
+  src: url('/fonts/Lato-Regular.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: SourceSansPro, LatoRegular, Roboto;
+}

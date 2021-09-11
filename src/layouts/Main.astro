@@ -1,0 +1,29 @@
+---
+import '/style/global.css'
+import Header from '$comp/Header.astro'
+import Footer from '$comp/Footer/index.astro'
+---
+
+<html>
+  <head>
+    <title>Valeron</title>
+  </head>
+  <body>
+    <div id="app">
+      <Header/>
+      <slot />
+      <Footer/>
+    </div>
+  </body>
+</html>
+
+<style lang="scss">
+#app, body {
+  height: 100vh;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+</style>
