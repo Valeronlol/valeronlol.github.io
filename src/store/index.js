@@ -1,3 +1,9 @@
 import { writable } from 'svelte/store';
 
-export const lang = writable();
+const lang = writable()
+const theme = writable()
+
+export {
+    lang,
+    theme,
+}

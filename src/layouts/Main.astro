@@ -2,14 +2,17 @@
 import '/style/global.css'
 import Header from '$comp/Header/index.astro'
 import Footer from '$comp/Footer/index.astro'
+import { mainTitle } from '$const'
+import ThemeProvider from '../components/hoc/ThemeProvider.svelte'
 ---
 
 <html>
   <head>
-    <title>Valeron</title>
+    <title>{mainTitle}</title>
   </head>
   <body>
     <div id="app">
+      <ThemeProvider client:load />
       <Header/>
       <slot />
       <Footer/>
@@ -17,13 +20,16 @@ import Footer from '$comp/Footer/index.astro'
   </body>
 </html>
 
-<style lang="scss">
-#app, body {
-  height: 100vh;
-}
-#app {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+<style>
+  #app, body {
+    height: 100vh;
+  }
+  #app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #app.dark {
+    color-scheme: dark;
+  }
 </style>

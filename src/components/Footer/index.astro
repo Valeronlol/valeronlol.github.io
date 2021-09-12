@@ -16,9 +16,17 @@ import CurrentDate from './CurrentDate.svelte'
         justify-content: center;
         align-items: center;
     }
+    :global(#app.dark footer) {
+        transition: background-color .25s ease;
+        background-color: grey;
+    }
     .text {
         color: #828282;
         font-weight: 700;
         font-size: 14px;
+    }
+    :global(#app.dark .text)  {
+        transition: color .25s ease;
+        color: white;
     }
 </style>

@@ -11,7 +11,7 @@
         en,
     }
 
-    onMount(async () => {
+    onMount(() => {
         const savedLang = localStorage.getItem(storageLangName)
         if (savedLang && savedLang !== $lang) {
             lang.set(savedLang)
