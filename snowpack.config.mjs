@@ -5,5 +5,6 @@ export default {
       $store: './src/store',
       $i18n: './src/i18n',
       $const: './src/constants.js',
+      $util: './src/utils',
     },
   };

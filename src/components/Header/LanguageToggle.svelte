@@ -9,7 +9,7 @@
         localStorage.setItem(storageLangName, newLang)
     }
 
-    const toggleColor = () => {
+    const toggleDarkTheme = () => {
         if ($theme === themes.DARK) {
             theme.set(null)
             localStorage.removeItem(storageThemeName)
@@ -24,5 +24,5 @@
 <button on:click={changeLang}>
     toggle
 </button>
-<button on:click={toggleColor}>Toggle mode</button>
+<button on:click={toggleDarkTheme}>Toggle mode</button>
 <slot />

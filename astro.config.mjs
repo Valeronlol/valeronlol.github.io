@@ -15,4 +15,7 @@ export default {
   renderers: [
     "@astrojs/renderer-svelte"
   ],
+  devOptions: {
+    port: 4000,
+  },
 };
