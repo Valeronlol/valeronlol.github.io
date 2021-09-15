@@ -3,15 +3,20 @@
 </script>
   
 <WithTranslations let:_={_}>
-    <span class='header-title'>
+    <h5 class='header-title'>
         {_('my_name')}
-    </span>
+    </h5>
     <slot />
 </WithTranslations>
 
 <style>
     .header-title {
-        color: blue;
-        font-size: 28px;
+        color: #333;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
     }
 </style>

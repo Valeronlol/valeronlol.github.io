@@ -4,6 +4,7 @@ import Header from '$comp/Header/index.astro'
 import Footer from '$comp/Footer/index.astro'
 import { mainTitle } from '$const'
 import ThemeProvider from '../components/hoc/ThemeProvider.svelte'
+import CurrentPageTitle from '../components/CurrentPageTitle.svelte'
 ---
 
 <html>
@@ -14,7 +15,14 @@ import ThemeProvider from '../components/hoc/ThemeProvider.svelte'
     <div id="app">
       <ThemeProvider client:load />
       <Header/>
-      <slot />
+      <div class="content">
+        <div class="wrapper">
+          <div class="page-title-wrap">
+            <CurrentPageTitle client:load />
+          </div>
+          <slot />
+        </div>
+      </div>
       <Footer/>
     </div>
   </body>
@@ -31,5 +39,23 @@ import ThemeProvider from '../components/hoc/ThemeProvider.svelte'
   }
   #app.dark {
     color-scheme: dark;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    padding: 0 180px;
+    width: 100%;
+    position: relative;
+  }
+  .page-title-wrap {
+    position: absolute;
+    height: 86px;
+    top: -43px;
   }
 </style>

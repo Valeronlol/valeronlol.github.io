@@ -2,7 +2,6 @@
 import Title from './Title.svelte'
 import LanguageToggle from './LanguageToggle.svelte'
 import Navigation from './Navigation.svelte'
-import CurrentPageTitle from './CurrentPageTitle.svelte'
 
 import SocialPanel from './SocialPanel.astro'
 import Avatar from './Avatar.astro'
@@ -11,35 +10,53 @@ import Avatar from './Avatar.astro'
 
 <header class="header">
     <div class="header-top">
-        <Title client:load />
-        <LanguageToggle client:load />
-        <SocialPanel />
+        <div class="container">
+            <div class="title-wrap">
+                <Title client:load />
+            </div>
+            <LanguageToggle client:load />
+            <SocialPanel />
+        </div>
     </div>
     <div class="header-bottom">
-        <Avatar />
-        <Navigation client:load />
-    </div>
-    <div class="current-page-title-wrapper">
-        <CurrentPageTitle client:load />
+        <div class="container">
+            <div class="avatar-wrap">
+                <Avatar />
+            </div>
+            <Navigation client:load />
+        </div>
     </div>
 </header>
 
 <style>
     .header {
-        height: 200px;
-        background-color: #f9f0f0;
-        position: relative;
-        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .header-top, .header-bottom {
+        padding: 0 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .header-top {
+        height: 74px;
+    }
+    .header-bottom {
+        background-color: #F5F7FD;
+        height: 140px;
     }
     :global(#app.dark .header)  {
         transition: background-color .25s ease;
-        background-color: grey;
     }
-    .current-page-title-wrapper {
-        position: absolute;
-        bottom: -50px;
-        left: 25%;
-        width: 75%;
-        overflow: hidden;
+    .title-wrap, .avatar-wrap {
+        margin-right: auto;
     }
 </style>

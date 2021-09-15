@@ -4,7 +4,7 @@
   
 <WithTranslations let:_={_}>
     <nav>
-        <a href="/">{('main_page')}</a>
+        <a href="/">{_('main_page')}</a>
         <a href="/about">{_('about')}</a>
         <a href="/blog">{_('blog')}</a>
     </nav>

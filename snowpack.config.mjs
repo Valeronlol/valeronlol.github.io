@@ -1,10 +1,11 @@
 export default {
     alias: {
       $: './src',
+      $public: './public',
       $comp: './src/components',
       $store: './src/store',
       $i18n: './src/i18n',
       $const: './src/constants.js',
-      $util: './src/utils',
+      $utils: './src/utils',
     },
   };
