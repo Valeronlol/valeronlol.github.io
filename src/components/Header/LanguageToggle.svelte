@@ -1,7 +1,7 @@
 <script>
-    import { lang, theme } from '$store/index.js'
+    import { lang } from '$store/index.js'
     import { mapLanguages } from '$i18n/languages.js'
-    import { storageLangName, themes, storageThemeName, app } from '$const'
+    import { storageLangName } from '$const'
     import WithTranslations from '$comp/hoc/WithTranslations.svelte'
 
     const { en, ru } = mapLanguages
@@ -9,17 +9,6 @@
     const changeLang = (newLang) => {
         lang.set(newLang)
         localStorage.setItem(storageLangName, newLang)
-    }
-
-    const toggleDarkTheme = () => {
-        document.getElementById(app).classList.toggle(themes.DARK)
-        if ($theme === themes.DARK) {
-            theme.set(null)
-            localStorage.removeItem(storageThemeName)
-        } else {
-            theme.set(themes.DARK)
-            localStorage.setItem(storageThemeName, themes.DARK)
-        }
     }
 </script>
 
@@ -43,7 +32,7 @@
             {_(en)}
         </span>
     </div>
-    <!-- <button on:click={toggleDarkTheme}>Toggle theme</button> -->
+    <slot />
 </WithTranslations>
 
 <style>

@@ -3,13 +3,18 @@
 </script>
   
 <WithTranslations let:_={_}>
-    <h5 class='header-title'>
-        {_('my_name')}
-    </h5>
+    <a href='/' class='header-link'>
+        <h5 class='header-title'>
+            {_('my_name')}
+        </h5>
+    </a>
     <slot />
 </WithTranslations>
 
 <style>
+    .header-link {
+        text-decoration: none;
+    }
     .header-title {
         color: #333;
         font-style: normal;
@@ -18,5 +23,13 @@
         line-height: 23px;
         letter-spacing: 0.2em;
         text-transform: uppercase;
+        cursor: pointer;
+        padding: 6px 12px;
+    }
+    .header-title:hover {
+        transition: background-color .15s ease, color .15s ease;
+        background-color: #5154A9;
+        border-radius: 15px;
+        color: #F2F2F2;
     }
 </style>

@@ -1,17 +1,76 @@
-<div class="social-panel">
-    <a href="https://linked.in" target="_blank">
-        li
-    </a>
-    <a href="https://linked.in" target="_blank">
-        tg
-    </a>
+---
+    import TelegramIconSrc from '$public/assets/icons/telegram.svg'
+    import LinkedInSrc from '$public/assets/icons/linkedin.svg'
+    import GithubSrc from '$public/assets/icons/github.svg'
+    import MediumSrc from '$public/assets/icons/medium.svg'
+
+    const sosials = [
+        {
+            url: 'https://www.linkedin.com/in/valeron1289/',
+            icon: LinkedInSrc,
+        },
+        {
+            url: 'https://t.me/valerii_kuzivanov',
+            icon: TelegramIconSrc,
+        },
+        {
+            url: 'http://github.com/valeronlol',
+            icon: GithubSrc,
+        },
+        {
+            url: 'https://medium.com/@valerka',
+            icon: MediumSrc,
+        },
+    ]
+
+    const createUrlMas = (iconUrl) => `
+        mask: url(${iconUrl}) no-repeat center;
+        -webkit-mask: url(${iconUrl}) no-repeat center;
+    `
+---
+
+<div class='social-panel'>
+    {sosials.map(({ url, icon }) => (
+        <div class="image-wrap">
+            
+            <a
+                href={url}
+                target='_blank'
+            >
+                <div class='icon' style={createUrlMas(icon)} />
+            </a>
+        </div>
+    ))}
 </div>
 
 <style>
+    .social-panel {
+        margin-right: 52px;
+        display: flex;
+    }
     .social-panel a {
         color: black;
     }
     :global(#app.dark .social-panel a)  {
         color: white;
+    }
+    .image-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .image-wrap:not(:first-child) {
+        margin-left: 8px;
+    }
+    .icon {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        background-color: #4F4F4F;
+    }
+    .icon:hover {
+        transition: background-color .15s ease;
+        background-color: #5154A9;
     }
 </style>

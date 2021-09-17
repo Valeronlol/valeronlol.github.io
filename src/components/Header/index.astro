@@ -1,6 +1,7 @@
 ---
 import Title from './Title.svelte'
 import LanguageToggle from './LanguageToggle.svelte'
+import ThemeToggle from './ThemeToggle.svelte'
 import Navigation from './Navigation.svelte'
 
 import SocialPanel from './SocialPanel.astro'
@@ -16,6 +17,7 @@ import Avatar from './Avatar.astro'
             </div>
             <LanguageToggle client:load />
             <SocialPanel />
+            <ThemeToggle client:load />
         </div>
     </div>
     <div class="header-bottom">
