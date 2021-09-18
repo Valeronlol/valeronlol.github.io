@@ -1,9 +1,22 @@
 <script>
     import WithTranslations from '$comp/hoc/WithTranslations.svelte'
+    import { isCurrentPath } from '$utils/router'
+
+    const mainPath = '/'
+
+    const mainClickHandler = (event) => {
+        if (isCurrentPath(mainPath)) {
+            event.preventDefault()
+        }
+    }
 </script>
   
 <WithTranslations let:_={_}>
-    <a href='/' class='header-link'>
+    <a
+        href={mainPath}
+        class='header-link'
+        on:click={mainClickHandler}
+    >
         <h5 class='header-title'>
             {_('my_name')}
         </h5>
@@ -14,6 +27,7 @@
 <style>
     .header-link {
         text-decoration: none;
+        margin-left: -12px;
     }
     .header-title {
         color: #333;

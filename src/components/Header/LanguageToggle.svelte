@@ -54,22 +54,23 @@
         pointer-events: none;
     }
     .lang-animate {
-        width: 46px;
+        width: 36px;
         height: 26px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         border: 2px solid #2A2833;
-        border-radius: 8px;
         pointer-events: none;
         transition: left .15s ease;
-        left: -28px;
+        left: -24px;
     }
     .lang-animate.ru {
         border-right-color: transparent;
+        border-radius: 15px 10px 10px 15px;
     }
     .lang-animate.en {
         border-left-color: transparent;
+        border-radius: 10px 15px 15px 10px;
         left: 26px;
     }
 </style>
