@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte'
-    import { themes, storageThemeName } from '$const'
+    import { storageThemeName } from '$const'
     import { theme } from '$store/index.js'
 
     onMount(() => {

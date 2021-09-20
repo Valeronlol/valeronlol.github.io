@@ -1,0 +1,14 @@
+---
+import { readFile } from 'node:fs/promises'
+import { mapLanguages } from '$i18n/languages.js'
+import MarkdownLanguageProvider from './MarkdownLanguageProvider.svelte'
+
+const { en, ru } = mapLanguages
+const { page } = Astro.props
+const { url } = import.meta
+
+const RU = await readFile(new URL(`../../markdown/${page}/${ru}.md`, url), 'utf-8')
+const EN = await readFile(new URL(`../../markdown/${page}/${en}.md`, url), 'utf-8')
+---
+
+<MarkdownLanguageProvider client:load RU={RU} EN={EN} />
