@@ -4,6 +4,7 @@
 
     $: isLightTheme = Boolean(!$theme && $theme !== themes.DARK)
     $: isDarkTheme = $theme === themes.DARK
+    $: isThemeLoaded = Boolean($theme) || $theme === null
 
     const toggleClass = () => document.getElementById(app).classList.toggle(themes.DARK)
 
@@ -26,16 +27,19 @@
 
 <div class='theme-toggle'>
     <slot />
-    <div
-        class='icon sun'
-        class:selected='{isLightTheme}'
-        on:click={handleSunClick}
-    />
-    <div
-        class='icon moon'
-        class:selected='{isDarkTheme}'
-        on:click={handleMoonClick}
-    />
+    {#if isThemeLoaded}
+        <div
+            class='icon sun'
+            class:selected='{isLightTheme}'
+            on:click={handleSunClick}
+        />
+        <div
+            class='icon moon'
+            class:selected='{isDarkTheme}'
+            on:click={handleMoonClick}
+        />
+    {/if}
+    <slot />
 </div>
 
 <style>

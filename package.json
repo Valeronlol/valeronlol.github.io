@@ -13,6 +13,7 @@
     "astro": "^0.20.5"
   },
   "dependencies": {
+    "dompurify": "^2.3.3",
     "lodash.get": "^4.4.2",
     "marked": "^3.0.4"
   }

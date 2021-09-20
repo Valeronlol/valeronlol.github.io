@@ -8,6 +8,8 @@
         if (storageTheme) {
             theme.set(storageTheme)
             document.getElementById('app').classList.add(storageTheme)
+        } else {
+            theme.set(null)
         }
 	})
 </script>

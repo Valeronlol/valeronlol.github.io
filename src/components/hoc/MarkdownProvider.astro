@@ -11,4 +11,10 @@ const RU = await readFile(new URL(`../../markdown/${page}/${ru}.md`, url), 'utf-
 const EN = await readFile(new URL(`../../markdown/${page}/${en}.md`, url), 'utf-8')
 ---
 
-<MarkdownLanguageProvider client:load RU={RU} EN={EN} />
+<div id='markdown' class={page}>
+    <MarkdownLanguageProvider
+        client:load
+        RU={RU}
+        EN={EN}
+    />
+</div>

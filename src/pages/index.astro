@@ -3,6 +3,12 @@ import BaseLayout from '$/layouts/Main.astro'
 import MarkdownProvider from '$comp/hoc/MarkdownProvider.astro'
 ---
 
-<BaseLayout title="Homepage">
+<BaseLayout>
   <MarkdownProvider page='main' />
 </BaseLayout>
+
+<style>
+  :global(#markdown.main p) {
+    color: red;
+  }
+</style>
