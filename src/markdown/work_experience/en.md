@@ -28,7 +28,7 @@ Stack: React.js, Vue.js, Node.js, Python2-3, Flask, Sqlalchemy, Django.
 
 ---
 
-## Backend node.js developer
+## Backend Node.js Developer
 **Intelligent Urban Systems**
 
 > Jan 2019 – Apr 2020

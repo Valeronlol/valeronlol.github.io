@@ -28,7 +28,7 @@
 
 ---
 
-## Backend node.js developer
+## Backend Node.js Developer
 **Intelligent Urban Systems**
 
 > Январь 2019 – Апрель 2020
@@ -45,7 +45,7 @@
 
 ---
 
-## Full Применяемые технологии Engineer
+## Full Stack Engineer
 **Play2Live**
 
 > Январь 2018 – Январь 2019
@@ -64,7 +64,7 @@
 
 ---
 
-## Full Применяемые технологии Engineer
+## Full Stack Engineer
 **SIA "Random Solutions"**
 
 > Июнь 2017 – Июнь 2018
@@ -81,7 +81,7 @@
 
 ---
 
-## Full Применяемые технологии Engineer
+## Full Stack Engineer
 **Sibers**
 
 > Сентябрь 2016 – Август 2017
