@@ -48,10 +48,18 @@
         cursor: pointer;
         user-select: none;
     }
+    :global(#app.dark .lang-btn.selected) {
+        transition: color .25s ease;
+        color: #4F4F4F;
+    }
     .lang-btn.selected {
         color: #2A2833;
         cursor: auto;
         pointer-events: none;
+    }
+    :global(#app.dark .lang-btn.selected) {
+        transition: color .25s ease;
+        color: #E0E0E0;
     }
     .lang-animate {
         width: 36px;
@@ -64,12 +72,15 @@
         transition: left .15s ease;
         left: -24px;
     }
+    :global(#app.dark .lang-animate) {
+        border-color: #E0E0E0;
+    }
     .lang-animate.ru {
-        border-right-color: transparent;
+        border-right-color: transparent !important;
         border-radius: 15px 10px 10px 15px;
     }
     .lang-animate.en {
-        border-left-color: transparent;
+        border-left-color: transparent !important;
         border-radius: 10px 15px 15px 10px;
         left: 26px;
     }

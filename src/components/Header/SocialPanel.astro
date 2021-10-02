@@ -68,9 +68,12 @@
         height: 24px;
         cursor: pointer;
         background-color: #4F4F4F;
+        transition: background-color .25s ease;
+    }
+    :global(#app.dark .social-panel .icon) {
+        background-color: #DADADA;
     }
     .icon:hover {
-        transition: background-color .15s ease;
-        background-color: #5154A9;
+        background-color: #5154A9 !important;
     }
 </style>

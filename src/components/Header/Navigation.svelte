@@ -42,8 +42,12 @@
         color: #333333;
         padding: 6px 12px;
     }
+    :global(#app.dark nav a) {
+        transition: color .25s ease;
+        color: #E0E0E0;
+    }
     a.selected {
-        color: #5154A9;
+        color: #5154A9 !important;
         font-weight: 800;
     }
     a:hover {

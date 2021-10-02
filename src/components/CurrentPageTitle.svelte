@@ -25,6 +25,10 @@
         font-size: 40px;
         line-height: 50px;
     }
+    :global(#app.dark .page-title-wrap .title) {
+        transition: color .25s ease;
+        color: #333333;
+    }
     .title-decoration {
         display: block;
         position: absolute;
@@ -36,7 +40,11 @@
         border: 6px solid #BDBDBD;
         box-sizing: border-box;
         border-radius: 30px 45px 45px 30px;
-        border-left-color: transparent;
+        border-left-color: transparent !important;
         pointer-events: none;
+    }
+    :global(#app.dark .title .title-decoration) {
+        transition: border-color .25s ease;
+        border-color: #333333;
     }
 </style>

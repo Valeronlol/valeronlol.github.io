@@ -40,6 +40,10 @@
         cursor: pointer;
         padding: 6px 12px;
     }
+    :global(#app.dark .header-title) {
+        transition: color .25s ease;
+        color: #E0E0E0;
+    }
     .header-title:hover {
         transition: background-color .15s ease, color .15s ease;
         background-color: #5154A9;

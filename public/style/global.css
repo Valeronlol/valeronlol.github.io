@@ -24,6 +24,11 @@ body {
   line-height: 30px;
 }
 
+#app.dark #markdown h2 {
+  transition: color .25s ease;
+  color: #E0E0E0;
+}
+
 #markdown strong {
   display: inline-block;
   font-family: LatoRegular, Roboto;
@@ -39,6 +44,11 @@ body {
   font-size: 18px;
 }
 
+#app.dark #markdown p {
+  transition: color .25s ease;
+  color: #BDBDBD;
+}
+
 #markdown blockquote {
   font-family: LatoRegular, Roboto;
   color: #828282;
@@ -48,4 +58,14 @@ body {
   display: block;
   margin: 30px 0 20px;
   border: 1px solid #BDBDBD;
+}
+
+#app.dark #markdown hr {
+  transition: border-color .25s ease;
+  border-color: #4F4F4F;
+}
+
+#app.dark {
+  transition: background-color .25s ease;
+  background-color: #101115;
 }

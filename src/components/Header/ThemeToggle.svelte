@@ -29,14 +29,14 @@
     <slot />
     {#if isThemeLoaded}
         <div
-            class='icon sun'
-            class:selected='{isLightTheme}'
-            on:click={handleSunClick}
-        />
-        <div
             class='icon moon'
             class:selected='{isDarkTheme}'
             on:click={handleMoonClick}
+        />
+        <div
+            class='icon sun'
+            class:selected='{isLightTheme}'
+            on:click={handleSunClick}
         />
     {/if}
     <slot />
@@ -59,10 +59,18 @@
         cursor: pointer;
         background-color: #BDBDBD;
     }
+    :global(#app.dark .theme-toggle .icon) {
+        transition: background-color .25s ease;
+        background-color: #4F4F4F;
+    }
     .icon.selected {
         background-color: #2A2833;
         cursor: default;
         pointer-events: none;
+    }
+    :global(#app.dark .theme-toggle .icon.selected) {
+        transition: background-color .25s ease;
+        background-color: #BDBDBD;
     }
     .sun {
         mask: url(/assets/icons/sun.svg) no-repeat center;
