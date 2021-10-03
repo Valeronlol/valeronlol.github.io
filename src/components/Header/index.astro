@@ -14,8 +14,10 @@ import Avatar from './Avatar.astro'
             <div class="title-wrap">
                 <Title client:load />
             </div>
-            <LanguageToggle client:load />
-            <ThemeToggle client:load />
+            <div class="controllers-wrap">
+                <LanguageToggle client:load />
+                <ThemeToggle client:load />
+            </div>
         </div>
     </div>
     <div class="header-bottom">
@@ -41,6 +43,7 @@ import Avatar from './Avatar.astro'
         flex-wrap: nowrap;
         justify-content: flex-end;
         align-items: center;
+        position: relative;
     }
     .header-top, .header-bottom {
         padding: 0 50px;
@@ -58,10 +61,38 @@ import Avatar from './Avatar.astro'
         transition: background-color .25s ease;
         background-color: #15161B;
     }
+    .controllers-wrap {
+        display: flex;
+        align-items: center;
+    }
     .title-wrap, .header-bottom-container-left {
         margin-right: auto;
     }
     .header-bottom-container-left {
         display: flex;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .header-top, .header-bottom {
+            padding: 0 20px;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        .header-top {
+            height: 98px;
+            position: relative;
+        }
+        .controllers-wrap {
+            align-self: flex-start;
+            margin-top: 16px;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .title-wrap {
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+        }
     }
 </style>

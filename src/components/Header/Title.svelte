@@ -35,6 +35,7 @@
         text-transform: uppercase;
         cursor: pointer;
         padding: 6px 12px;
+        white-space: nowrap;
     }
     :global(#app.dark .header-link) {
         transition: color .25s ease;

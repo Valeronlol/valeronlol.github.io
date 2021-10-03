@@ -41,6 +41,7 @@
         text-transform: uppercase;
         color: #333333;
         padding: 6px 12px;
+        white-space: nowrap;
     }
     :global(#app.dark nav a) {
         transition: color .25s ease;
