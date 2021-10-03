@@ -56,6 +56,9 @@
         border-radius: 15px;
         color: #F2F2F2;
     }
+    a.selected:hover {
+        color: #F2F2F2 !important;
+    }
     a:not(:first-child) {
         margin-left: 10px;
     }

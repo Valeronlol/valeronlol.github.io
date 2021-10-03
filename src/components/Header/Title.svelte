@@ -17,9 +17,7 @@
         class='header-link'
         on:click={mainClickHandler}
     >
-        <h5 class='header-title'>
-            {_('my_name')}
-        </h5>
+        {_('my_name')}
     </a>
     <slot />
 </WithTranslations>
@@ -28,8 +26,6 @@
     .header-link {
         text-decoration: none;
         margin-left: -12px;
-    }
-    .header-title {
         color: #333;
         font-style: normal;
         font-weight: bold;
@@ -40,11 +36,11 @@
         cursor: pointer;
         padding: 6px 12px;
     }
-    :global(#app.dark .header-title) {
+    :global(#app.dark .header-link) {
         transition: color .25s ease;
         color: #E0E0E0;
     }
-    .header-title:hover {
+    .header-link:hover {
         transition: background-color .15s ease, color .15s ease;
         background-color: #5154A9;
         border-radius: 15px;

@@ -4,12 +4,12 @@ import Header from '$comp/Header/index.astro'
 import Footer from '$comp/Footer/index.astro'
 import { mainTitle } from '$const'
 import ThemeProvider from '../components/hoc/ThemeProvider.svelte'
-import CurrentPageTitle from '../components/CurrentPageTitle.svelte'
 ---
 
 <html>
   <head>
     <title>{mainTitle}</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
   </head>
   <body>
     <div id="app">
@@ -17,9 +17,6 @@ import CurrentPageTitle from '../components/CurrentPageTitle.svelte'
       <Header/>
       <div class="content">
         <div class="wrapper">
-          <div class="page-title-wrap">
-            <CurrentPageTitle client:load />
-          </div>
           <slot />
         </div>
       </div>
@@ -49,13 +46,8 @@ import CurrentPageTitle from '../components/CurrentPageTitle.svelte'
     display: flex;
     flex-direction: column;
     max-width: 1200px;
-    padding: 100px 180px 50px;
+    padding: 70px 180px 50px;
     width: 100%;
     position: relative;
-  }
-  .page-title-wrap {
-    position: absolute;
-    height: 86px;
-    top: -26px;
   }
 </style>

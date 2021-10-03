@@ -3,8 +3,7 @@ import Title from './Title.svelte'
 import LanguageToggle from './LanguageToggle.svelte'
 import ThemeToggle from './ThemeToggle.svelte'
 import Navigation from './Navigation.svelte'
-
-import SocialPanel from './SocialPanel.astro'
+import CurrentPageTitle from './CurrentPageTitle.svelte'
 import Avatar from './Avatar.astro'
 
 ---
@@ -16,14 +15,14 @@ import Avatar from './Avatar.astro'
                 <Title client:load />
             </div>
             <LanguageToggle client:load />
-            <SocialPanel />
             <ThemeToggle client:load />
         </div>
     </div>
     <div class="header-bottom">
         <div class="container">
-            <div class="avatar-wrap">
+            <div class="header-bottom-container-left">
                 <Avatar />
+                <CurrentPageTitle client:load />
             </div>
             <Navigation client:load />
         </div>
@@ -59,7 +58,10 @@ import Avatar from './Avatar.astro'
         transition: background-color .25s ease;
         background-color: #15161B;
     }
-    .title-wrap, .avatar-wrap {
+    .title-wrap, .header-bottom-container-left {
         margin-right: auto;
+    }
+    .header-bottom-container-left {
+        display: flex;
     }
 </style>

@@ -1,11 +1,9 @@
 ---
-import CurrentDate from './CurrentDate.svelte'
+import SocialPanel from './SocialPanel.astro'
 ---
 
 <footer>
-    <span class="text">
-        <CurrentDate client:load />
-    </span>
+    <SocialPanel />
 </footer>
 
 <style>
@@ -20,14 +18,5 @@ import CurrentDate from './CurrentDate.svelte'
     :global(#app.dark footer) {
         transition: background-color .25s ease;
         background-color: #333333;
-    }
-    .text {
-        color: #828282;
-        font-weight: 700;
-        font-size: 14px;
-    }
-    :global(#app.dark .text)  {
-        transition: color .25s ease;
-        color: #BDBDBD;
     }
 </style>
