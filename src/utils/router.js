@@ -2,7 +2,13 @@ import routes from './routes.json'
 
 const isCurrentPath = path => path === window.location.pathname
 
-const getCurrentRoute = currentPath => routes.find(route => route.target === currentPath)
+const getCurrentRoute = currentPath => {
+    if (currentPath.endsWith('/')) {
+        currentPath = currentPath.slice(0, -1)
+    }
+
+    return routes.find(route => route.target === currentPath)
+}
 
 const routesWithoutMain = routes.filter(({ target }) => target !== '/')
 
