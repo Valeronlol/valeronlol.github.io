@@ -4,7 +4,7 @@
     import GithubSrc from '$public/assets/icons/github.svg'
     import MediumSrc from '$public/assets/icons/medium.svg'
 
-    const sosials = [
+    const socials = [
         {
             url: 'https://www.linkedin.com/in/valeron1289/',
             icon: LinkedInSrc,
@@ -23,21 +23,21 @@
         },
     ]
 
-    const createUrlMas = (iconUrl) => `
+    const createUrlMask = (iconUrl) => `
         mask: url(${iconUrl}) no-repeat center;
         -webkit-mask: url(${iconUrl}) no-repeat center;
     `
 ---
 
 <div class='social-panel'>
-    {sosials.map(({ url, icon }) => (
+    {socials.map(({ url, icon }) => (
         <div class="image-wrap">
             
             <a
                 href={url}
                 target='_blank'
             >
-                <div class='icon' style={createUrlMas(icon)} />
+                <div class='icon' style={createUrlMask(icon)} />
             </a>
         </div>
     ))}
