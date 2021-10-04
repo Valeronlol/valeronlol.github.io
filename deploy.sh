@@ -21,3 +21,5 @@ git commit -m 'deploy'
 git push origin gh-pages --force
 
 git checkout master
+
+npm ci
