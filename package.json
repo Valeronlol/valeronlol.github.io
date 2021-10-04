@@ -1,7 +1,7 @@
 {
   "name": "personal_valerons_page",
   "homepage": "https://valeronlol.github.io/",
-  "version": "1.0",
+  "version": "1.0.0",
   "private": false,
   "scripts": {
     "dev": "astro dev",
