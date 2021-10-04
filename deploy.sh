@@ -5,7 +5,7 @@ set -e
 git checkout gh-pages
 git reset --hard origin/master
 
-npm install
+npm ci
 npm run build
 
 find * -maxdepth 0 -name 'dist' -prune -o -exec rm -rf '{}' ';'
@@ -20,4 +20,4 @@ git commit -m 'deploy'
 
 git push origin gh-pages --force
 
-git checkout main
+git checkout master
