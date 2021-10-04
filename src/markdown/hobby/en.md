@@ -1,7 +1,7 @@
 ## Threre you can find more about me and what I like in life.
 <br>
 
-While studying at school, maths were very easy for me, so my parents decided that I should be an engineer and sent me to the engineering institute of BGTU "Voenmeh".
+While studying at school, math were very easy for me, so my parents decided that I should be an engineer and sent me to the engineering institute of BGTU "Voenmeh".
 I studied engineering for three years, and then I realized that this is not what I would like. I decided to transfer to the opposite specialty, the Faculty of Management in "Tourism and Services".
 
 <br>

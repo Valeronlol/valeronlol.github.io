@@ -84,4 +84,10 @@
         border-radius: 10px 15px 15px 10px;
         left: 26px;
     }
+
+    @media screen and (max-width: 650px) {
+        .lang-toggle {
+            margin-left: 10px;
+        }
+    }
 </style>

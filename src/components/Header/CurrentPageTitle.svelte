@@ -51,7 +51,7 @@
             position: absolute;
             top: 100%;
             right: 0;
-            font-size: 50px;
+            font-size: 40px;
             color: #fff;
             text-shadow: 2px 0 0 #E0E0E0, -2px 0 0 #E0E0E0, 0 2px 0 #E0E0E0, 0 -2px 0 #E0E0E0, 1px 1px #E0E0E0, -1px -1px 0 #E0E0E0, 1px -1px 0 #E0E0E0, -1px 1px 0 #E0E0E0;
         }
