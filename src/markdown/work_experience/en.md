@@ -9,7 +9,7 @@ Development of internal panel for transport operators.
 
 <br/>
 
-Stack: React.js, Node.js, AWS.
+Stack: React.js(Redux, Thunk), Node.js(Serverless.js, KOA.js), AWS, Kubernetes, Jenkins.
 
 ---
 
@@ -92,7 +92,7 @@ Outsource company (sibers.ru), development of projects of varying complexity.
 
 Stack: Symfony 3.2, CodeIgniter 3, Kohana, Laravel 5, YII2, React.js v14, Angular.js 1.6, Angular 2.0, Wordpress(WPRest API, plugins and themes).
 
-<br/>
+---
 
 ## Web Software Developer
 **Iteg**
@@ -107,7 +107,7 @@ Development and support government projects.
 
 Stack: Kohana framework, CodeIgniter 3. SASS/stylus & grunt/gulp, jQuery.
 
-<br/>
+---
 
 ## Web Software Developer
 **Atlas**

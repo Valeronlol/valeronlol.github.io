@@ -9,7 +9,7 @@
 
 <br/>
 
-Применяемые технологии: React.js, Node.js, AWS.
+Применяемые технологии: React.js(Redux, Thunk), Node.js(Serverless.js, KOA.js), AWS, Kubernetes, Jenkins.
 
 ---
 

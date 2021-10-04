@@ -54,3 +54,8 @@ Sometimes I write about technologies, if you are interested in what exactly, the
 <br>
 
 Also, I like good tea, chocolate, snowboarding, trekking and sauna. And, of course, computer games, from time to time I play "Civilization 6", "Factorio".
+
+<br>
+
+But, my main achievement in life is deployed microk8s cluster on a home Raspberry Pi 4 with bunch of pet projects :)
+![Raspberry-pi](/assets/rpi.jpeg)
