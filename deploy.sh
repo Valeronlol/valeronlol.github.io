@@ -8,7 +8,9 @@ git reset --hard origin/master
 npm install
 npm run build
 
-cd dist
+find * -maxdepth 0 -name 'dist' -prune -o -exec rm -rf '{}' ';'
+
+mv ./dist/* .
 
 touch .nojekyll
 
@@ -17,7 +19,5 @@ git add -A
 git commit -m 'deploy'
 
 git push origin gh-pages --force
-
-cd -
 
 git checkout main
