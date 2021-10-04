@@ -1,6 +1,6 @@
 export default {
   buildOptions: {
-    site: 'https://valeron.me',
+    site: 'https://valeronlol.github.io',
     sitemap: true,
   },
   renderers: [
