@@ -57,4 +57,4 @@
 <br>
 
 Главным своим достижением считаю развернутый кластер microk8s на домашнем Raspberry Pi 4 с пет проектами :)
-![Raspberry-pi](/assets/rpi.jpeg)
+![Raspberry-pi](/assets/rpi.avif)

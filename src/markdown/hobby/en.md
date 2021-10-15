@@ -58,4 +58,4 @@ Also, I like good tea, chocolate, snowboarding, trekking and sauna. And, of cour
 <br>
 
 But, my main achievement in life is deployed microk8s cluster on a home Raspberry Pi 4 with bunch of pet projects :)
-![Raspberry-pi](/assets/rpi.jpeg)
+![Raspberry-pi](/assets/rpi.avif)
