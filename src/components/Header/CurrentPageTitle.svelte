@@ -27,7 +27,7 @@
         transition: color .25s ease;
         white-space: nowrap;
     }
-    :global(#app.dark .header-bottom-container-left .title) {
+    :global(#app.dark .header-bottom .title) {
         color: #4F4F4F;
     }
 
@@ -56,7 +56,7 @@
             text-shadow: 2px 0 0 #E0E0E0, -2px 0 0 #E0E0E0, 0 2px 0 #E0E0E0, 0 -2px 0 #E0E0E0, 1px 1px #E0E0E0, -1px -1px 0 #E0E0E0, 1px -1px 0 #E0E0E0, -1px 1px 0 #E0E0E0;
         }
 
-        :global(#app.dark .header-bottom-container-left .title) {
+        :global(#app.dark .header-bottom .title) {
             text-shadow: 2px 0 0 #4F4F4F, -2px 0 0 #4F4F4F, 0 2px 0 #4F4F4F, 0 -2px 0 #4F4F4F, 1px 1px #4F4F4F, -1px -1px 0 #4F4F4F, 1px -1px 0 #4F4F4F, -1px 1px 0 #4F4F4F;
             color: #101115;
         }

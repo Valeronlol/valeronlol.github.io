@@ -31,7 +31,7 @@
         overflow: hidden;
         flex-direction: column;
         align-items: flex-end;
-        margin-right: -12px;
+        margin: 0 -12px 0 auto;
     }
     a {
         text-decoration: none;

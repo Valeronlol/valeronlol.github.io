@@ -21,10 +21,8 @@ import Avatar from './Avatar.astro'
     </div>
     <div class="header-bottom">
         <div class="container">
-            <div class="header-bottom-container-left">
-                <Avatar />
-                <CurrentPageTitle client:load />
-            </div>
+            <Avatar />
+            <CurrentPageTitle client:load />
             <Navigation client:load />
         </div>
     </div>
@@ -40,7 +38,6 @@ import Avatar from './Avatar.astro'
         max-width: 1200px;
         display: flex;
         flex-wrap: nowrap;
-        justify-content: flex-end;
         align-items: center;
         position: relative;
     }
@@ -63,12 +60,7 @@ import Avatar from './Avatar.astro'
     .controllers-wrap {
         display: flex;
         align-items: center;
-    }
-    .title-wrap, .header-bottom-container-left {
-        margin-right: auto;
-    }
-    .header-bottom-container-left {
-        display: flex;
+        margin-left: auto;
     }
 
     @media screen and (max-width: 1024px) {
