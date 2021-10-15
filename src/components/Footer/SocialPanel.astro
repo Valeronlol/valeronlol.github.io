@@ -41,7 +41,7 @@
                 href={url}
                 target='_blank'
             >
-                <div class='icon' style={createUrlMask(icon)} />
+                <span class='icon' style={createUrlMask(icon)} />
             </a>
         </div>
     ))}
@@ -67,6 +67,7 @@
         margin-left: 16px;
     }
     .icon {
+        display: block;
         width: 24px;
         height: 24px;
         cursor: pointer;
