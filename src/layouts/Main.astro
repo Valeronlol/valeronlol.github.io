@@ -22,11 +22,11 @@ import ThemeProvider from '../components/hoc/ThemeProvider.svelte'
     <div id="app">
       <ThemeProvider client:load />
       <Header/>
-      <div class="content">
+      <main>
         <div class="wrapper">
           <slot />
         </div>
-      </div>
+      </main>
       <Footer/>
     </div>
   </body>
@@ -44,7 +44,7 @@ import ThemeProvider from '../components/hoc/ThemeProvider.svelte'
   #app.dark {
     color-scheme: dark;
   }
-  .content {
+  main {
     display: flex;
     justify-content: center;
     flex-grow: 1;
