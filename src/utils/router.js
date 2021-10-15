@@ -8,11 +8,11 @@ const clearPath = (path) => {
     return path
 }
 
-const isCurrentPath = path => path === window.location.pathname
+const isCurrentPath = path => path === clearPath(window.location.pathname)
 
 const getCurrentRoute = currentPath => {
-    const clearPath = clearPath(currentPath)
-    routes.find(route => clearPath(route.target) === clearPath)
+    const clearCurrentPath = clearPath(currentPath)
+    return routes.find(route => route.target === clearCurrentPath)
 }
 
 const routesWithoutMain = routes.filter(({ target }) => target !== '/')
@@ -21,5 +21,4 @@ export {
     routesWithoutMain as routes,
     isCurrentPath,
     getCurrentRoute,
-    clearPath,
 }
