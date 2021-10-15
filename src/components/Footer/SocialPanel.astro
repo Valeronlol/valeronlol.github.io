@@ -25,11 +25,7 @@
 
     const createUrlMask = (iconUrl) => `
         mask-image: url(${iconUrl});
-        mask-repeat: no-repeat;
-        mask-position: center;
         -webkit-mask-image: url(${iconUrl});
-        -webkit-mask-repeat: no-repeat;
-        -webkit-mask-position: center;
     `
 ---
 
@@ -73,6 +69,8 @@
         cursor: pointer;
         background-color: #4F4F4F;
         transition: background-color .25s ease;
+        mask-repeat: no-repeat;
+        mask-position: center;
     }
     :global(#app.dark .social-panel .icon) {
         background-color: #DADADA;
