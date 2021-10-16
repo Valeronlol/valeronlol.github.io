@@ -1,6 +1,6 @@
 import routes from './routes.json'
 
-const clearPath = (path) => {
+const clearPath = path => {
     if (path.endsWith('/') && path !== '/') {
         return path.slice(0, -1)
     }
@@ -21,4 +21,5 @@ export {
     routesWithoutMain as routes,
     isCurrentPath,
     getCurrentRoute,
+    clearPath,
 }

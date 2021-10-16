@@ -4,7 +4,7 @@ export default {
     sitemap: true,
   },
   renderers: [
-    "@astrojs/renderer-svelte"
+    '@astrojs/renderer-svelte',
   ],
   devOptions: {
     port: 4000,
