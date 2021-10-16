@@ -6,7 +6,7 @@ import { mainTitle } from '$const'
 import ThemeProvider from '../components/hoc/ThemeProvider.svelte'
 ---
 
-<html>
+<html lang='en'>
   <head>
     <title>{mainTitle}</title>
     <meta name='viewport' content='width=device-width, initial-scale=1' />
@@ -19,11 +19,11 @@ import ThemeProvider from '../components/hoc/ThemeProvider.svelte'
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <div id="app">
+    <div id='app'>
       <ThemeProvider client:load />
       <Header/>
       <main>
-        <div class="wrapper">
+        <div class='wrapper'>
           <slot />
         </div>
       </main>
