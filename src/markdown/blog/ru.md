@@ -1,3 +1,13 @@
+## Немного рассказал про Astro.js в рамках "On The Spot Talks"!
+
+<br>
+
+Видео доступно на [Youtube](https://youtu.be/_9wsppr58jg?t=329)
+
+<br>
+<hr>
+<br>
+
 ## Мы запускаем курс по Node.js вместе с TeachMeSkills!
 
 <br>
