@@ -1,4 +1,14 @@
-## Lets talk about Astro.js in context of "On The Spot Talks"!
+## We talked with really cool guys about architecture and microservices!
+
+<br>
+
+Video is available on [Youtube](https://youtu.be/lZ7JPsRS4NY)
+
+<br>
+<hr>
+<br>
+
+## Let's talk about Astro.js in context of "On The Spot Talks"!
 
 <br>
 
