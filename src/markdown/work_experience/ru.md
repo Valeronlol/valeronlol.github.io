@@ -14,7 +14,7 @@
 ---
 
 ## Software Engineer
-**Via**
+**Via Transportation**
 
 > Январь 2021 – Январь 2022
 
