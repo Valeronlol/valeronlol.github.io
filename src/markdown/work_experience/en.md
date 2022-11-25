@@ -12,6 +12,7 @@ Technical leadership of a small team.
 Stack: React.js, Nest.js, GraphQL(Apollo), Jenkins, Microservices and GRPC, Postgres, ELK.
 
 ---
+
 ## Software Engineer
 **Via Transportation**
 

@@ -11,6 +11,8 @@
 
 Применяемые технологии: React.js, Nest.js, GraphQL(Apollo), Jenkins, Microservices and GRPC, Postgres, ELK.
 
+---
+
 ## Software Engineer
 **Via**
 
