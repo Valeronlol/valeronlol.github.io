@@ -1,11 +1,26 @@
-## Software Engineer
-**Via**
+## Development Team Lead
+**IPPlum**
 
-> Jun 2021 – Present
+> Aug 2022 – Present
+
+<br/>
+
+Technical leadership of a small team.
+
+<br/>
+
+Stack: React.js, Nest.js, GraphQL(Apollo), Jenkins, Microservices and GRPC, Postgres, ELK.
+
+---
+## Software Engineer
+**Via Transportation**
+
+> Jun 2021 – Jun 2022
 
 <br/>
 
 Development of internal panel for transport operators.
+Improvement of functionality for processing and transferring data from bunch of downstream to higher services.
 
 <br/>
 
