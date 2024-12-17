@@ -5,11 +5,11 @@
 
 <br/>
 
-Technical leadership of a small team.
-Exploring the domain.
-Planning the architecture.
-Slicing ideas into tasks and dispersing them among the team.
-Delivering code to production.
+Technical leadership of a small team.<br/>
+Exploring the domain.<br/>
+Planning the architecture.<br/>
+Slicing ideas into tasks and dispersing them among the team.<br/>
+Delivering code to production.<br/>
 
 <br/>
 
@@ -24,7 +24,7 @@ Stack: React.js, Nest.js, GraphQL(Apollo), Jenkins, Microservices and GRPC, Post
 
 <br/>
 
-Development of internal panel for transport operators.
+Development of internal panel for transport operators.<br/>
 Improvement of functionality for processing and transferring data from bunch of downstream to higher services.
 
 <br/>
