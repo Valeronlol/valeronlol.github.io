@@ -6,6 +6,10 @@
 <br/>
 
 Technical leadership of a small team.
+Exploring the domain.
+Planning the architecture.
+Slicing ideas into tasks and dispersing them among the team.
+Delivering code to production.
 
 <br/>
 

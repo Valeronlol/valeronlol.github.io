@@ -1,5 +1,8 @@
 # Valerii Kuzivanov personal page
 
+### Install
+- `npm i` - to install depends
+
 ### Dev mode
 - `npm run dev` - to start dev server
 
