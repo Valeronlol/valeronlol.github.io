@@ -1,8 +1,10 @@
 ---
 import BaseLayout from '$/layouts/Main.astro'
 import MarkdownProvider from '$comp/hoc/MarkdownProvider.astro'
+import ResumeDownload from '$comp/common/Resume.astro'
 ---
 
 <BaseLayout>
+  <ResumeDownload />
   <MarkdownProvider page='work_experience' />
 </BaseLayout>
