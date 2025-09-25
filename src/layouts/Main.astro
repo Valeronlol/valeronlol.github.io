@@ -1,14 +1,16 @@
 ---
-import '/style/global.css'
+import '$/styles/global.css'
 import Header from '$comp/Header/index.astro'
 import Footer from '$comp/Footer/index.astro'
 import { mainTitle } from '$const'
-import ThemeProvider from '../components/hoc/ThemeProvider.svelte'
+import ThemeProvider from '$comp/hoc/ThemeProvider.svelte'
+import { mapLanguages } from '$i18n/languages.js'
 ---
 
-<html lang='en'>
+<html lang={mapLanguages.en}>
   <head>
     <title>{mainTitle}</title>
+    <meta charset="UTF-8" />
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">

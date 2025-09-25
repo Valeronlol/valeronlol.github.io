@@ -1,11 +1,11 @@
 <script>
     import { onMount } from 'svelte'
-    import get from 'lodash.get'
     import { lang } from '$store/index.js'
     import ru from '$i18n/translations/ru.json'
     import en from '$i18n/translations/en.json'
     import { storageLangName } from '$const'
     import { getBrowserLanguage } from '$utils/languages'
+    import { mapLanguages } from '$i18n/languages.js'
 
     const translations = {
         ru,
@@ -26,7 +26,7 @@
         isLangLoaded = true
 	})
 
-    $: translater = path => get(translations, `${$lang}.${path}`)
+    $: translater = path => translations?.[$lang]?.[path] ?? mapLanguages.en
 </script>
 
 {#if isLangLoaded}

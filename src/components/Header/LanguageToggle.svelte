@@ -14,10 +14,10 @@
 
 <WithTranslations let:_={_}>
     <div class='lang-toggle'>
-        <div
-            class='lang-animate {$lang}'
-        />
+        <span class='lang-animate {$lang}'></span>
         <span
+            role="button" 
+            tabindex="0"
             on:click={() => changeLang(ru)}
             class:selected='{$lang === ru}'
             class='lang-btn'
@@ -25,6 +25,8 @@
             {_(ru)}
         </span>
         <span
+            role="button" 
+            tabindex="0"
             on:click={() => changeLang(en)}
             class:selected='{$lang === en}'
             class='lang-btn'
@@ -62,6 +64,7 @@
         color: #E0E0E0;
     }
     .lang-animate {
+        display: block;
         width: 36px;
         height: 26px;
         position: absolute;

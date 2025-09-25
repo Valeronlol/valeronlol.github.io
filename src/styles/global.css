@@ -70,6 +70,11 @@ body {
   background-color: #101115;
 }
 
+#app.dark .resume {
+  filter: brightness(0) invert(1);
+}
+
+
 #markdown a {
   text-decoration: none;
 }

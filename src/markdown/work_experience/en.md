@@ -1,7 +1,7 @@
 ## Development Team Lead
 **IPPlum**
 
-> Aug 2022 – Present
+> Aug 2022 - Present
 
 <br/>
 
@@ -13,14 +13,14 @@ Delivering code to production.<br/>
 
 <br/>
 
-Stack: React.js, Nest.js, GraphQL(Apollo), Jenkins, Microservices and GRPC, Postgres, ELK.
+Stack: Node.js(Nest), Golang, Postgres, Clickhouse, Redis, Jenkins, ELK, Apache Druid, Next.js.
 
 ---
 
 ## Software Engineer
 **Via Transportation**
 
-> Jun 2021 – Jun 2022
+> Jun 2021 - Jun 2022
 
 <br/>
 
@@ -36,7 +36,7 @@ Stack: React.js(Redux, Thunk), Node.js(Serverless.js, KOA.js), AWS, Kubernetes, 
 ## Software Engineer
 **Wargaming**
 
-> Apr 2020 – Jun 2021
+> Apr 2020 - Jun 2021
 
 <br/>
 
@@ -51,7 +51,7 @@ Stack: React.js, Vue.js, Node.js, Python2-3, Flask, Sqlalchemy, Django.
 ## Backend Node.js Developer
 **Intelligent Urban Systems**
 
-> Jan 2019 – Apr 2020
+> Jan 2019 - Apr 2020
 
 <br/>
 
@@ -66,7 +66,7 @@ Stack: Docker(Swarm, Compose, Traefik), Node.js(Express, Koa, Moleculer), Postgr
 ## Full Stack Engineer
 **Play2Live**
 
-> Jun 2018 – Jan 2019
+> Jun 2018 - Jan 2019
 
 <br/>
 
@@ -85,7 +85,7 @@ Stack: Vue.js, Nuxt.js, Node.js, Socket.io, Jest, Sinon.js, Sentry.io, Postgresq
 ## Full Stack Engineer
 **SIA "Random Solutions"**
 
-> Jun 2017 – Jun 2018
+> Jun 2017 - Jun 2018
 
 <br/>
 
@@ -102,7 +102,7 @@ Stack: Vue.js, Angular 4, backbone.js, websocket.io, node.js(express.js + socket
 ## Full Stack Engineer
 **Sibers**
 
-> Sep 2016 – Aug 2017
+> Sep 2016 - Aug 2017
 
 <br/>
 
@@ -117,7 +117,7 @@ Stack: Symfony 3.2, CodeIgniter 3, Kohana, Laravel 5, YII2, React.js v14, Angula
 ## Web Software Developer
 **Iteg**
 
-> Oct 2015 – Sep 2016
+> Oct 2015 - Sep 2016
 
 <br/>
 

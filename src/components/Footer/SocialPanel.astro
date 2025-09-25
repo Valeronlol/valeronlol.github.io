@@ -1,32 +1,27 @@
 ---
-    import TelegramIconSrc from '$public/assets/icons/telegram.svg'
-    import LinkedInSrc from '$public/assets/icons/linkedin.svg'
-    import GithubSrc from '$public/assets/icons/github.svg'
-    import MediumSrc from '$public/assets/icons/medium.svg'
-
     const socials = [
         {
             url: 'https://www.linkedin.com/in/valeron1289/',
-            icon: LinkedInSrc,
+            icon: '/assets/icons/linkedin.svg',
         },
         {
             url: 'https://t.me/valerii_kuzivanov',
-            icon: TelegramIconSrc,
+            icon: '/assets/icons/github.svg',
         },
         {
             url: 'http://github.com/valeronlol',
-            icon: GithubSrc,
+            icon: '/assets/icons/github.svg',
         },
         {
             url: 'https://medium.com/@valerka',
-            icon: MediumSrc,
+            icon: '/assets/icons/medium.svg',
         },
     ]
 
-    const createUrlMask = (iconUrl) => `
+    const createUrlMask = (iconUrl: string) => (`
         mask-image: url(${iconUrl});
         -webkit-mask-image: url(${iconUrl});
-    `
+    `)
 ---
 
 <div class='social-panel'>

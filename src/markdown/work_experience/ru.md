@@ -1,7 +1,7 @@
 ## Development Team Lead
 **IPPlum**
 
-> Авг 2022 – По настоящее время
+> Авг 2022 - По настоящее время
 
 <br/>
 
@@ -13,14 +13,14 @@
 
 <br/>
 
-Применяемые технологии: React.js, Nest.js, GraphQL(Apollo), Jenkins, Microservices and GRPC, Postgres, ELK.
+Применяемые технологии: Node.js(Nest), Golang, Postgres, Clickhouse, Redis, Jenkins, ELK, Apache Druid, Next.js.
 
 ---
 
 ## Software Engineer
 **Via Transportation**
 
-> Январь 2021 – Январь 2022
+> Январь 2021 - Январь 2022
 
 <br/>
 
@@ -35,7 +35,7 @@
 ## Software Engineer
 **Wargaming**
 
-> Апрель 2020 – Июнь 2021
+> Апрель 2020 - Июнь 2021
 
 <br/>
 
@@ -50,7 +50,7 @@
 ## Backend Node.js Developer
 **Intelligent Urban Systems**
 
-> Январь 2019 – Апрель 2020
+> Январь 2019 - Апрель 2020
 
 <br/>
 
@@ -67,7 +67,7 @@
 ## Full Stack Engineer
 **Play2Live**
 
-> Январь 2018 – Январь 2019
+> Январь 2018 - Январь 2019
 
 <br/>
 
@@ -86,7 +86,7 @@
 ## Full Stack Engineer
 **SIA "Random Solutions"**
 
-> Июнь 2017 – Июнь 2018
+> Июнь 2017 - Июнь 2018
 
 <br/>
 
@@ -103,7 +103,7 @@
 ## Full Stack Engineer
 **Sibers**
 
-> Сентябрь 2016 – Август 2017
+> Сентябрь 2016 - Август 2017
 
 <br/>
 
@@ -118,7 +118,7 @@
 ## Web Software Developer
 **Iteg**
 
-> Октябрь 2015 – Сентябрь 2016
+> Октябрь 2015 - Сентябрь 2016
 
 <br/>
 

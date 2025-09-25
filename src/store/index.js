@@ -1,9 +1,6 @@
-import { writable } from 'svelte/store';
+import { writable } from 'svelte/store'
+import { mapLanguages } from '$i18n/languages.js'
 
-const lang = writable()
-const theme = writable()
+export const lang = writable(mapLanguages.en)
 
-export {
-    lang,
-    theme,
-}
+export const theme = writable()

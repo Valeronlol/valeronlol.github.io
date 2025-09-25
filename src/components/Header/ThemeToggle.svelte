@@ -32,12 +32,12 @@
             class='icon moon'
             class:selected='{isDarkTheme}'
             on:click={handleMoonClick}
-        />
+        ></div>
         <div
             class='icon sun'
             class:selected='{isLightTheme}'
             on:click={handleSunClick}
-        />
+        ></div>
     {/if}
     <slot />
 </div>
