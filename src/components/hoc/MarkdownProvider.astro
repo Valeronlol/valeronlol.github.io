@@ -1,25 +1,25 @@
 ---
-import { readFile } from 'node:fs/promises'
-import { mapLanguages } from '$i18n/languages.js'
-import MarkdownLanguageProvider from './MarkdownLanguageProvider.svelte'
-import { parse } from 'marked'
+import { readFile } from "node:fs/promises";
+import { fileURLToPath } from "node:url";
+import { resolve, dirname } from "node:path";
+import { parse } from "marked";
+import { languages } from "$i18n/languages.js";
+import MarkdownLanguageProvider from "./MarkdownLanguageProvider.svelte";
 
-const markdownPath = '../../src/markdown'
-const { en, ru } = mapLanguages
-const { page } = Astro.props
-const { url } = import.meta
+const { page } = Astro.props;
 
-const path = new URL(`${markdownPath}/${page}/${ru}.md`, url)
-const enc = 'utf-8'
-const [RU, EN] = await Promise
-    .all([ readFile(path, enc), readFile(path, enc)])
-    .then((data) => data.map((md) => parse(md)))
+const prefix = "../../markdown";
+const enc = "utf-8";
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const langPaths = languages.map((lang) => {
+    const path = resolve(__dirname, `${prefix}/${page}/${lang}.md`);
+    return readFile(path, enc);
+});
+const [EN, RU] = await Promise.all(langPaths).then((data) =>
+    data.map((md) => parse(md)),
+);
 ---
 
-<div id='markdown' class={page}>
-    <MarkdownLanguageProvider
-        client:load
-        RU={RU}
-        EN={EN}
-    />
+<div id="markdown" class={page}>
+    <MarkdownLanguageProvider client:load RU={RU} EN={EN} />
 </div>
