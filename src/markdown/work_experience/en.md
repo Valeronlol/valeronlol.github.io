@@ -1,7 +1,22 @@
+## Software Engineer
+**365Scores**
+
+> Jan 2026 - Present
+
+<br/>
+
+Development of sports data platform and real-time score updates.
+
+<br/>
+
+Stack: Node.js, ValKey, Kafka, PostgreSQL, AWS, React.js.
+
+---
+
 ## Development Team Lead
 **IPPlum**
 
-> Aug 2022 - Present
+> Aug 2022 - Jan 2026
 
 <br/>
 
