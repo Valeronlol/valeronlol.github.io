@@ -1,0 +1,1 @@
+const e=[{target:"/",title:"main_page"},{target:"/work_experience",title:"work_experience"},{target:"/blog",title:"blog"},{target:"/hobby",title:"hobby"}],r=t=>t.endsWith("/")&&t!=="/"?t.slice(0,-1):t,i=t=>t===r(window.location.pathname),a=t=>{const n=r(t);return e.find(o=>o.target===n)},s=e.filter(({target:t})=>t!=="/");export{a as g,i,s as r};
