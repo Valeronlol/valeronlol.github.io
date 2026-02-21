@@ -40,7 +40,7 @@ Stack: Node.js(Nest), Golang, Postgres, Clickhouse, Redis, Jenkins, ELK, Apache 
 <br/>
 
 Development of internal panel for transport operators.<br/>
-Improvement of functionality for processing and transferring data from bunch of downstream to higher services.
+Improvement of functionality for processing and transferring data from multiple downstream services to higher services.
 
 <br/>
 
@@ -70,7 +70,7 @@ Stack: React.js, Vue.js, Node.js, Python2-3, Flask, Sqlalchemy, Django.
 
 <br/>
 
-Build CI/CD, configuring fault tolerance and seamless deployment, development of backend microservices with node.js for mobile applications and frontend panel.
+Building CI/CD, configuring fault tolerance and seamless deployment, development of backend microservices with Node.js for mobile applications and frontend panel.
 
 <br/>
 
